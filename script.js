@@ -23,7 +23,7 @@ let Alarm = function(t, s, c, h, m) {
 
     this.later = function() {
         let dateLater = new Date();
-        if (this.onLater == true && dateLater.getMinutes() == this.minSet + 1) {
+        if (this.onLater == true && dateLater.getMinutes() == this.minSet + 5) {
             alert (this.signal + '\n'+ this.hourSet + ':' + dateLater.getMinutes());
         }
     }
